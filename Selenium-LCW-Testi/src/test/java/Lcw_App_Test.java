@@ -16,7 +16,7 @@ public class Lcw_App_Test extends BaseTest{
     public void correctLogin() {
         driver.get("https://www.lcwaikiki.com/tr-TR/TR/giris ");
         driver.findElement(By.id("LoginEmail")).sendKeys("binicii.busraa@gmail.com");
-        driver.findElement(By.id("Password")).sendKeys("b908447+");
+        driver.findElement(By.id("Password")).sendKeys("*********");
         driver.findElement(By.id("loginLink")).click();
         Assertions.assertEquals(driver.getTitle(), "Home Page");
     }
